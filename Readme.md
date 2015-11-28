@@ -1,10 +1,8 @@
 Matryoshka Text
 ============
 
-This is a fork of a matryoshkaText library: https://github.com/quiqueqs/matryoshkaText
-
-I just added Click functionality and adding custom typefaces to parts of text.
-
+This is a fork of a matryoshkaText library: https://github.com/quiqueqs/BabushkaText . I just 
+added Click functionality and adding custom typefaces to parts of text.
 
 MatryoshkaText is a custom `TextView` which lets you customize the styling of parts of your text via
 `Spannables`, but without the hassle of having to deal directly with Spannable themselves.
@@ -29,7 +27,7 @@ Generate the following style:
 With the code below:
 
 ```java
-        matryoshkaText matryoshka = (matryoshkaText)findViewById(R.id.matryoshka_text);
+        MatryoshkaText matryoshka = (MatryoshkaText)findViewById(R.id.matryoshka_text);
 
         // Add the first piece "Central Park"
         matryoshka.addPiece(new MatryoshkaText.Piece.Builder("Central Park, NY\n")
@@ -57,7 +55,7 @@ What kind of styles can I add?
 Right now you can customize the style of your text by using the following methods, which internally
 get converted to the corresponding `Spannables`
 
-| matryoshka Method        | Internal Span           |
+| MatryoshkaText Method        | Internal Span           |
 | ------------- |:-------------:|
 | textSize      | AbsoluteSizeSpan |
 | textColor      | ForegroundColorSpan      |
@@ -68,7 +66,7 @@ get converted to the corresponding `Spannables`
 | strike | StrikethroughSpan      |
 | superscript | SuperscriptSpan      |
 | subscript | SubscriptSpan      |
-| click | TouchableSpan      |
+| clickCallback | TouchableSpan      |
 | typeface | TypefaceSpan      |
 
 What else can I do?
