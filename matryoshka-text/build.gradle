@@ -2,20 +2,20 @@ apply plugin: 'com.android.library'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'pl.rafalmanka.matryoshkatext'
+    bintrayName = 'matryoshka-text'
 
-    publishedGroupId = 'pl.rafalmanka.matryoshkatext'
-    libraryName = 'matryoshkatext'
+    publishedGroupId = 'pl.rafalmanka'
+    libraryName = 'matryoshka-text'
     artifact = 'matryoshkatext'
 
-    libraryDescription = 'AMatryoshkaText is a custom TextView which lets you customize the styling of parts of your text via Spannables, but without the hassle of having to deal directly with Spannable themselves.'
+    libraryDescription = 'MatryoshkaText is a custom TextView which lets you customize the styling of parts of your text via Spannables, but without the hassle of having to deal directly with Spannable themselves.'
 
     siteUrl = 'https://github.com/RafalManka/matryoshka-text'
     gitUrl = 'https://github.com/RafalManka/matryoshka-text.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
 
-    developerId = 'RafalManka'
+    developerId = 'rafalmanka'
     developerName = 'Rafal Manka'
     developerEmail = 'rafal@manka.info'
 
@@ -37,9 +37,13 @@ android {
 
 }
 
+//tasks.findByPath(":MatryoshkaText:androidJavadocs").enabled = false
+
 dependencies {
     compile 'com.android.support:support-annotations:23.1.1'
 }
+
+
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
