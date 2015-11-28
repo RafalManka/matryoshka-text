@@ -32,18 +32,18 @@ With the code below:
         matryoshkaText matryoshka = (matryoshkaText)findViewById(R.id.matryoshka_text);
 
         // Add the first piece "Central Park"
-        matryoshka.addPiece(new matryoshkaText.Piece.Builder("Central Park, NY\n")
+        matryoshka.addPiece(new MatryoshkaText.Piece.Builder("Central Park, NY\n")
                 .textColor(Color.parseColor("#414141"))
                 .build());
 
         // Add the second piece "1.2 mi"
-        matryoshka.addPiece(new matryoshkaText.Piece.Builder("1.2 mi ")
+        matryoshka.addPiece(new MatryoshkaText.Piece.Builder("1.2 mi ")
                 .textColor(Color.parseColor("#0081E2"))
                 .textSizeRelative(0.9f)
                 .build());
 
         // Add the third piece "from here"
-        matryoshka.addPiece(new matryoshkaText.Piece.Builder("from here")
+        matryoshka.addPiece(new MatryoshkaText.Piece.Builder("from here")
                 .textColor(Color.parseColor("#969696"))
                 .textSizeRelative(0.9f)
                 .build());
