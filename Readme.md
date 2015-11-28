@@ -12,7 +12,7 @@ MatryoshkaText is a custom `TextView` which lets you customize the styling of pa
  * Eliminate `setSpan(Object what, int start, int end, int flags)` calls by using more convenient
  methods such as `.style(Typeface.BOLD)`, `.superscript()` and others.
 
-What can I do with matryoshkaText?
+What can I do with MatryoshkaText?
 --------
 Examples of different styles. Each one is a **single** TextView.
 
@@ -93,7 +93,7 @@ If you find any **bugs** or have a **problem** while using this library, please 
 License
 -------
 
-    Copyright 2014 Henrique Boregio
+    Copyright 2015 Rafal Manka
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
